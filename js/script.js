@@ -94,4 +94,39 @@ if (userNumber % 2 === 0) { // operatore resto (se e vero il numero è pari)
 };
 
 
+// Switch case
+
+// Chiedi all'utente di inserite il nome di un giorno della settimana stampando in console se è lavorativo o festivo
+
+let giorno = prompt('Inserisci un giorno della settimana').toLowerCase();
+
+// Switch
+
+switch (giorno) { // condizione giorno
+    case 'lunedi':
+        console.log(`${giorno} è un giorno lavorativo`);
+        break; // esco da questa condizione
+    case 'martedi':
+        console.log(`${giorno} è un giorno lavorativo`);
+        break;
+    case 'mercoledi':
+        console.log(`${giorno} è un giorno lavorativo`);
+        break;
+    case 'giovedi':
+        console.log(`${giorno} è un giorno lavorativo`);
+        break;
+    case 'venerdi':
+        console.log(`${giorno} è un giorno lavorativo`);
+        break;
+    case 'sabato':
+        console.log(`${giorno} è un giorno festivo`);
+        break;
+    case 'domenica':
+        console.log(`${giorno} è un giorno festivo`);
+        break;
+};
+
+
+
+
 
