@@ -185,6 +185,26 @@ for (let i = 1; i <= 20; i++) {
 };
 
 
+// Livello 3 Funzioni e array 
+
+// Scrivi una funzione somma (a, b) che restituisca la somma di 2 numeri
+
+// Dichiarazione della funzione (indico allo script che esiste una funzione ovvero -blocco di codice rutilizzabile che esegue un operazione specifica)
+
+function addizione(a, b) { // a, b sono dei parametri ovvero delle variabili che esistono solo all'interno della funzione che prendono un valore dall'argomento
+    return a + b; // restiuiso la somma dei due parametri
+}
+
+let primo_numero = 5;
+let secondo_numero = 5
+
+let risultato = addizione(primo_numero, secondo_numero); // invoco la funzione somma (richiamo) e le passo un argomento reale (valori delle variabili)
+
+console.log(`La somma tra ${primo_numero} + ${secondo_numero} è : ${risultato}`);
+
+
+
+
 
 
 

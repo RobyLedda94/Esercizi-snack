@@ -5,7 +5,7 @@
 }
 
 .square {
-    width: calc(100% / 5);
+    width: calc(100% / 2);
     height: 80px;
     border: 1px solid black;
     display: flex;
@@ -44,7 +44,19 @@
 
 /* query */
 
-@media screen and (min-width : 768px) {
+@media screen and (min-width : 372px) {
+    .square {
+        width: calc(100% / 4);
+    }
+}
+
+@media screen and (min-width : 762px) {
+    .square {
+        width: calc(100% / 5);
+    }
+}
+
+@media screen and (min-width : 992px) {
     .square {
         width: calc(100% / 10);
     }
