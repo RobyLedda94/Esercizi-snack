@@ -153,6 +153,38 @@ while (i >= 0) { // codizione da verificare
 
 // Fizz Buzz con manipolazione del dom (genera numeri da 1 a 20 : multipli di 3 inetto fizz, multipli di 5 inietto buzz, per entrambi fizzBuzz)
 
+// Dichiarazione variabili 
+
+// Elemento di visualizazzione
+
+let grid = document.getElementById('grid');
+
+// Ciclo for per generare numeri da 1 a 20
+
+for (let i = 1; i <= 20; i++) {
+    // Per ogni istruzione di iterazione creo un elemento div
+    let div = document.createElement('div');
+    // Assegno all'elemento creato la classe square
+    div.classList.add('square');
+
+    // Appendo all' elemento di visualizazzione (grid) i div creati
+    grid.appendChild(div);
+
+    // Istruzione consizionale per stabilire i multipli di 3 e di 5
+
+    if (i % 3 === 0 && i % 5 === 0) { // operatore binario && (and - entrambi gli operatori devono risultare veri)
+        div.innerText = 'FizzBuzz';
+        div.classList.add('fizzBuzz');
+    } else if (i % 3 === 0) {
+        div.innerText = 'Fizz';
+        div.classList.add('fizz');
+    } else if (i % 5 === 0) {
+        div.innerText = 'Buzz';
+        div.classList.add('buzz');
+    };
+};
+
+
 
 
 

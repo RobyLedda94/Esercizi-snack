@@ -5,9 +5,14 @@
 }
 
 .square {
-    width: calc(100% / 10);
+    width: calc(100% / 5);
     height: 80px;
     border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #fff;
 }
 
 /* Utility */
@@ -22,4 +27,25 @@
 
 .bg-blue {
     background-color: rgb(42, 42, 129);
+}
+
+.fizzBuzz {
+    background-color: goldenrod;
+}
+
+.fizz {
+    background-color: rgb(105, 14, 14);
+}
+
+.buzz {
+    background-color: rgb(25, 25, 121);
+}
+
+
+/* query */
+
+@media screen and (min-width : 768px) {
+    .square {
+        width: calc(100% / 10);
+    }
 }
