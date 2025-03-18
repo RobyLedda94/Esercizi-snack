@@ -226,6 +226,23 @@ console.log(`La somma tra tutti gli elementi è di : ${sommaNumeri}`);
 
 
 
+// Manipolazione array (rimozione elemento, aggiunta elemento)
+
+const nomi = ['Alessandro', 'Adriana', 'Antonio', 'Alessandro Jr', 'Gianluca', 'Giulia'];
+
+// Rimozione ultimo elemento
+
+nomi.pop();
+
+// Aggiunta nuovo elemento
+
+nomi.push('Roberto');
+
+console.log(nomi);
+
+
+
+
 
 
 
