@@ -73,3 +73,25 @@ console.log(typeof numeroStringa);
 
 
 
+
+// Livello 2 (Condizioni e cicli)
+
+// Chiedi all'utente di inderire un numero tramite prompt e controlla se è pari o dispari
+
+let userNumber = parseInt(prompt('Inserisci un numero'));
+
+console.log(userNumber);
+
+// Isruzione condizionale per stabilise se il numero inserito dall'utente è pari o dispari
+
+if (userNumber % 2 === 0) { // operatore resto (se e vero il numero è pari)
+
+    console.log(`Il numero ${userNumber} è pari`);
+
+} else { // se e falso il numero è dispari
+
+    console.log(`Il numero ${userNumber} è dispari`);
+};
+
+
+
