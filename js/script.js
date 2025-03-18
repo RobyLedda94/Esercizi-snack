@@ -241,6 +241,32 @@ nomi.push('Roberto');
 console.log(nomi);
 
 
+// Funzione per trovare il valore massimo in un array
+
+// Dichiarazione delle funzioni
+
+function trovaMassimo(arrayNumberi) {
+    // Variabile valore massimo (parto dal primo elemento dell'array)
+    let massimo = arrayNumberi[0];
+
+    // Ciclo sull'array numerico
+    for (let i = 1; i < arrayNumberi.length; i++) {
+        if (arrayNumberi[i] > massimo) {
+            massimo = arrayNumberi[i];
+        }
+    };
+
+    return massimo;
+}
+
+
+// Dichiarazione delle variabili
+
+const testNumeri = [3, 7, 2, 10, 5];
+
+console.log(`Il valore massimo è : ${trovaMassimo(testNumeri)}`);
+
+
 
 
 
