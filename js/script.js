@@ -193,7 +193,7 @@ for (let i = 1; i <= 20; i++) {
 
 function addizione(a, b) { // a, b sono dei parametri ovvero delle variabili che esistono solo all'interno della funzione che prendono un valore dall'argomento
     return a + b; // restiuiso la somma dei due parametri
-}
+};
 
 let primo_numero = 5;
 let secondo_numero = 5
@@ -201,6 +201,27 @@ let secondo_numero = 5
 let risultato = addizione(primo_numero, secondo_numero); // invoco la funzione somma (richiamo) e le passo un argomento reale (valori delle variabili)
 
 console.log(`La somma tra ${primo_numero} + ${secondo_numero} è : ${risultato}`);
+
+
+
+// Creaimo un array con 5 numeri e calcoliamo la loro somma con un ciclo for
+
+// Array numerico 
+
+const numbers = [10, 20, 30, 40, 50];
+
+// Variabile settata a 0 per tenere traccia della somma tra i numeri 
+
+let sommaNumeri = 0;
+
+// Ciclo for (adatto per iterare su insiemi di dati array)
+for (let i = 0; i < numbers.length; i++) {
+    // Aggiungiamo ogni numero alla somma totale
+    sommaNumeri += numbers[i];
+};
+
+
+console.log(`La somma tra tutti gli elementi è di : ${sommaNumeri}`);
 
 
 
