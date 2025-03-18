@@ -151,6 +151,11 @@ while (i >= 0) { // codizione da verificare
 };
 
 
+// Fizz Buzz con manipolazione del dom (genera numeri da 1 a 20 : multipli di 3 inetto fizz, multipli di 5 inietto buzz, per entrambi fizzBuzz)
+
+
+
+
 
 
 

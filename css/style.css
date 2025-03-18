@@ -1,5 +1,14 @@
 /* Layout */
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.square {
+    width: calc(100% / 10);
+    height: 80px;
+    border: 1px solid black;
+}
 
 /* Utility */
 
