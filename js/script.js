@@ -47,3 +47,29 @@ console.log(`Il prodotto tra ${firstNum} * ${secondNum} è uguale a : ${prod}`);
 // Divisione 
 let divis = firstNum / secondNum;
 console.log(`La divisione tra ${firstNum} / ${secondNum} è uguale a : ${divis}`);
+
+
+
+
+
+// Conversione di tipi
+
+const strNumero = '40'; // stringa
+
+console.log(typeof strNumero); // con il typeof verifico il tipo di dato
+
+const numeroConvertito = Number(strNumero); // converto il dato della variabile strNumero da stringa a valoe numerico
+
+console.log(typeof numeroConvertito);
+
+
+const numero = 100; // valore numerico
+
+console.log(typeof numero);
+
+const numeroStringa = String(numero); // converto il dato della variabile numero da valore numerico a stringa
+
+console.log(typeof numeroStringa);
+
+
+
