@@ -131,8 +131,23 @@ switch (giorno) { // condizione giorno
 
 // Stampiamo dei numeri da 1 a 10
 
+console.log('-----CICLO FOR-----');
+
 for (let i = 1; i <= 10; i++) {
     console.log(i);
+};
+
+
+// Ciclo while 
+
+// Crea un contatore che parta da 10 e arriva fino a 0
+
+let i = 10; // contatore
+console.log('-----CICLO WHILE-----');
+while (i >= 0) { // codizione da verificare 
+
+    console.log(i);
+    i--; // condizione di fine ciclo
 };
 
 
