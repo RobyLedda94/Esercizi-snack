@@ -369,8 +369,21 @@ movies.forEach((elem) => {
     let cols = document.createElement('div');
     // Assegno alle colonne create le classi di bootstrap
     cols.classList.add('col-12', 'col-md-4', 'col-sm-6');
-
-
+    // Inietto il contenuto alle colonne
+    cols.innerHTML = `
+                    <div class="card my-2">
+                        <div class="card-body">
+                            <img class="img-fluid" src="./img/${elem.img}" alt="">
+                            <div class="mt-2">
+                                <p><strong>Titolo : ${elem.titolo}</strong></p>
+                                <p><strong>Genere : ${elem.genere}</strong></p>
+                                <p><strong>Anno : ${elem.descrizione}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+    `
+    // Appendo le colonne al contenutore principale
+    films_container.appendChild(cols);
 
 });
 
