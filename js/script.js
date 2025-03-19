@@ -314,7 +314,26 @@ function creaColonna() {
     col.classList.add('col-12', 'col-md-4', 'col-sm-6');
 
     return col; // restutuisco la colonna creata
-}
+};
+
+// Funzione per la creazione delle card
+function creaCards(card) {
+    return `
+            <div class="card my-2">
+                <div class="card-body">
+                    <img class="img-fluid" src="./img/${card.img}" alt="">
+                    <div class="mt-2">
+                        <p><strong>Titolo : ${card.titolo}</strong></p>
+                        <p><strong>Genere : ${card.genere}</strong></p>
+                        <p><strong>Anno : ${card.descrizione}</strong></p>
+                    </div>
+                </div>
+            </div>
+    `
+};
+
+
+
 
 
 
@@ -368,6 +387,8 @@ let movies = [
     },
 ];
 
+
+
 // Richiamo la finzione per mostrare l'arrau di oggetti a video
 mostraInConsole(movies);
 
@@ -380,18 +401,8 @@ movies.forEach((elem) => {
     let cols = creaColonna();
 
     // Inietto il contenuto alle colonne
-    cols.innerHTML = `
-                    <div class="card my-2">
-                        <div class="card-body">
-                            <img class="img-fluid" src="./img/${elem.img}" alt="">
-                            <div class="mt-2">
-                                <p><strong>Titolo : ${elem.titolo}</strong></p>
-                                <p><strong>Genere : ${elem.genere}</strong></p>
-                                <p><strong>Anno : ${elem.descrizione}</strong></p>
-                            </div>
-                        </div>
-                    </div>
-    `
+    cols.innerHTML = creaCards(elem);
+
     // Appendo le colonne al contenutore principale
     films_container.appendChild(cols);
 
