@@ -333,7 +333,24 @@ function creaCards(card) {
 };
 
 
+// Funzione per mostrare le card a video
+function mostraCards(arrayCards) {
+    // Contenitore delle colonne e delle card
+    let films_container = document.getElementById('films-container');
 
+    // Ciclo forEach sull'array di oggetti (movies)
+    arrayCards.forEach((elem) => {
+        // Dichiaro una variabile cols e le assegno la chiamata della funzione che crea la singola colonna
+        let cols = creaColonna();
+
+        // Inietto il contenuto alle colonne
+        cols.innerHTML = creaCards(elem);
+
+        // Appendo le colonne al contenutore principale
+        films_container.appendChild(cols);
+
+    });
+};
 
 
 
@@ -392,21 +409,10 @@ let movies = [
 // Richiamo la finzione per mostrare l'arrau di oggetti a video
 mostraInConsole(movies);
 
-// Contenitore delle colonne e delle card
-let films_container = document.getElementById('films-container');
+// Richiamo la funzione per mostrare le card a video passando un argomento reale (array di oggetti movies)
+mostraCards(movies);
 
-// Ciclo forEach sull'array di oggetti (movies)
-movies.forEach((elem) => {
-    // Dichiaro una variabile cols e le assegno la chiamata della funzione che crea la singola colonna
-    let cols = creaColonna();
 
-    // Inietto il contenuto alle colonne
-    cols.innerHTML = creaCards(elem);
-
-    // Appendo le colonne al contenutore principale
-    films_container.appendChild(cols);
-
-});
 
 
 
