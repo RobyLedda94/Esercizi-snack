@@ -295,8 +295,20 @@ for (let key in persona) {
 
 
 // Definizione delle funzioni
+function mostraInConsole(movieArray) {
+    movieArray.forEach((elem, index) => {
+        console.log(index);
+        console.log(elem.titolo);
+        console.log(elem.genere);
+        console.log(elem.anno);
+        console.log(elem.descrizione);
+    });
+};
+
+
 
 // Dichiarazione delle variabili
+
 
 // Array di oggetti 
 
@@ -344,6 +356,15 @@ let movies = [
         descrizione: 'Lorem ipsum dolor'
     },
 ];
+
+
+// Contenitore delle colonne e delle card
+let films_container = document.getElementById('films-container');
+
+// Richiamo la finzione per mostrare l'arrau di oggetti a video
+mostraInConsole(movies);
+
+
 
 
 
