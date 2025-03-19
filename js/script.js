@@ -357,12 +357,24 @@ let movies = [
     },
 ];
 
+// Richiamo la finzione per mostrare l'arrau di oggetti a video
+mostraInConsole(movies);
 
 // Contenitore delle colonne e delle card
 let films_container = document.getElementById('films-container');
 
-// Richiamo la finzione per mostrare l'arrau di oggetti a video
-mostraInConsole(movies);
+// Ciclo forEach sull'array di oggetti (movies)
+movies.forEach((elem) => {
+    // Per ogni iterazione creo un elemento div
+    let cols = document.createElement('div');
+    // Assegno alle colonne create le classi di bootstrap
+    cols.classList.add('col-12', 'col-md-4', 'col-sm-6');
+
+
+
+});
+
+
 
 
 
