@@ -241,6 +241,8 @@ nomi.push('Roberto');
 console.log(nomi);
 
 
+
+
 // Funzione per trovare il valore massimo in un array
 
 // Dichiarazione delle funzioni
@@ -265,6 +267,28 @@ function trovaMassimo(arrayNumberi) {
 const testNumeri = [3, 7, 2, 10, 5];
 
 console.log(`Il valore massimo è : ${trovaMassimo(testNumeri)}`);
+
+
+
+
+// Oggetti, ciclo for in
+
+
+// Crea un oggetto persona con proprietà nome, età e cognome e stampalo in console
+
+// Oggetto
+
+let persona = {
+    nome: 'Roberto',
+    cognome: 'Ledda',
+    eta: 'Anni 31'
+};
+
+// Ciclo for in adatto per cicclare strutture dati di tipo oggetto
+
+for (let key in persona) {
+    console.log(key, ':', persona[key]);
+};
 
 
 
