@@ -305,6 +305,17 @@ function mostraInConsole(movieArray) {
     });
 };
 
+// Funzione per la creazione della singola colonna
+function creaColonna() {
+    // creo un elemento div
+    let col = document.createElement('div');
+
+    // Assegno alle colonna create le classi di bootstrap
+    col.classList.add('col-12', 'col-md-4', 'col-sm-6');
+
+    return col; // restutuisco la colonna creata
+}
+
 
 
 // Dichiarazione delle variabili
@@ -365,10 +376,9 @@ let films_container = document.getElementById('films-container');
 
 // Ciclo forEach sull'array di oggetti (movies)
 movies.forEach((elem) => {
-    // Per ogni iterazione creo un elemento div
-    let cols = document.createElement('div');
-    // Assegno alle colonne create le classi di bootstrap
-    cols.classList.add('col-12', 'col-md-4', 'col-sm-6');
+    // Dichiaro una variabile cols e le assegno la chiamata della funzione che crea la singola colonna
+    let cols = creaColonna();
+
     // Inietto il contenuto alle colonne
     cols.innerHTML = `
                     <div class="card my-2">
