@@ -291,6 +291,61 @@ for (let key in persona) {
 };
 
 
+// Array di oggetti films, mostro a video tutto il contenuto
+
+
+// Definizione delle funzioni
+
+// Dichiarazione delle variabili
+
+// Array di oggetti 
+
+let movies = [
+    {
+        titolo: 'Il collezionista di ossa',
+        img: 'il_collezionista_di_ossa.jpg',
+        genere: 'Thriller',
+        anno: '1999',
+        descrizione: 'Lorem ipsum dolor'
+    },
+    {
+        titolo: 'Io sono leggenda',
+        img: 'io_sono_leggenda.jpg',
+        genere: 'Azione',
+        anno: '2007',
+        descrizione: 'Lorem ipsum dolor'
+    },
+    {
+        titolo: 'Joker',
+        img: 'joker.jpg',
+        genere: 'Thriller',
+        anno: '2019',
+        descrizione: 'Lorem ipsum dolor'
+    },
+    {
+        titolo: 'Land of Mine',
+        img: 'landofmine.jpg',
+        genere: 'Guerra',
+        anno: '2015',
+        descrizione: 'Lorem ipsum dolor'
+    },
+    {
+        titolo: 'Napoleon',
+        img: 'napoleon.jpg',
+        genere: 'Guerra',
+        anno: '2023',
+        descrizione: 'Lorem ipsum dolor'
+    },
+    {
+        titolo: 'Pulp Fiction',
+        img: 'pulp_fiction.jpg',
+        genere: 'Giallo',
+        anno: '1994',
+        descrizione: 'Lorem ipsum dolor'
+    },
+];
+
+
 
 
 
