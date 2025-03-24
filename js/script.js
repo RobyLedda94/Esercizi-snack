@@ -291,6 +291,8 @@ for (let key in persona) {
 };
 
 
+
+
 // Array di oggetti films, mostro a video tutto il contenuto
 
 
@@ -325,7 +327,7 @@ function creaCards(card) {
                     <div class="mt-2">
                         <p><strong>Titolo : ${card.titolo}</strong></p>
                         <p><strong>Genere : ${card.genere}</strong></p>
-                        <p><strong>Anno : ${card.descrizione}</strong></p>
+                        <p><strong>Anno : ${card.anno}</strong></p>
                     </div>
                 </div>
             </div>
@@ -411,6 +413,20 @@ mostraInConsole(movies);
 
 // Richiamo la funzione per mostrare le card a video passando un argomento reale (array di oggetti movies)
 mostraCards(movies);
+
+
+// Destrutturazione 
+
+const user = {
+    name: 'Vale',
+    age: 30,
+    email: 'vale@1',
+};
+
+const { name, email } = user;
+
+console.log(name, email);
+
 
 
 
