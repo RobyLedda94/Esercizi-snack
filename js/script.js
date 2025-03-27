@@ -441,6 +441,17 @@ const { name, email } = user;
 console.log(name, email);
 
 
+// Parametro rest
+
+function funzione(...argomenti) {
+    console.log(argomenti);
+};
+
+funzione('Prova', 'Ciao', 1, 2, 3, 4, 5, false, true);
+
+
+
+
 
 
 
