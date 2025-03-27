@@ -313,7 +313,7 @@ function creaColonna() {
     let col = document.createElement('div');
 
     // Assegno alle colonna create le classi di bootstrap
-    col.classList.add('col-12', 'col-md-4', 'col-sm-6');
+    col.classList.add('col-12', 'col-sm-6', 'col-md-4');
 
     return col; // restutuisco la colonna creata
 };
@@ -415,6 +415,19 @@ mostraInConsole(movies);
 mostraCards(movies);
 
 
+// Ciclo for in
+
+let object = {
+    name: 'Nome',
+    surname: 'Cognome',
+    age: 'Età'
+};
+
+for (let key in object) {
+    console.log(key + ' ' + object[key]);
+}
+
+
 // Destrutturazione 
 
 const user = {
@@ -426,6 +439,11 @@ const user = {
 const { name, email } = user;
 
 console.log(name, email);
+
+
+
+
+
 
 
 
